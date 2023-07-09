@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Wheel Of Food</title>
+          <meta name="viewport" content="with=device-width, initial-scale=1.0">
+          <meta charset="UTF-8">
+          <link rel="stylesheet" href="styles.css">
+          <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@600&display=swap" rel="stylesheet">
+     </head>
+     <body>
+          <figure id="background">
+          <h1>เที่ยงนี้กินอะไรดี 🍲 </h1>
+          <form name"form" action="." method="post">
+                <label for="info1"><p>อาหารที่อยากกินจานที่ 1:</p></label>
+                <input type="text" name="food1" placeholder="ตรงนี้" required>
+                <br>
+                <label for="info2"><p>อาหารที่อยากกินจานที่ 2:</p></label>
+                <input type="text" name="food2" placeholder="ตรงนี้" required>
+                <br>
+                <label for="info3"><p>อาหารที่อยากกินจานที่ 3:</p></label>
+                <input type="info3" name="food3" placeholder="ตรงนี้" required>
+                <br>
+                <label for="info4:"><p>อาหารที่อยากกินจานที่ 4:</p></label>
+                <input type="info4" name="food4" placeholder="ตรงนี้" required>
+                <br>
+                <label for="info5:"><p>อาหารที่อยากกินจานที่ 5:</p></label>
+                <input type="text" name="food5" placeholder="ตรงนี้" required>
+                <br>
+                <div>
+                    <input type="submit"></button>
+               </figure>
+          </form>
+          <script>
+               document.querySelector("form").addEventListener("submit", function(event) {
+                 event.preventDefault();
+                 
+                 let info1 = document.getElementsByName("food1")[0].value;
+                 let info2 = document.getElementsByName("food2")[0].value;
+                 let info3 = document.getElementsByName("food3")[0].value;
+                 let info4 = document.getElementsByName("food4")[0].value;
+                 let info5 = document.getElementsByName("food5")[0].value;
+     
+                 let list = [info1, info2, info3, info4, info5];
+     
+                 let x = list[Math.floor(Math.random() * list.length)];
+                 alert("กิน" + x + "สิ !!");
+                 console.log(x);
+               });
+             </script>
+        </div>
+</body>
+<style>
+       
